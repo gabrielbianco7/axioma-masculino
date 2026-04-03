@@ -1,0 +1,36 @@
+.header {
+  background: var(--text);
+  color: #fff;
+  padding: 2.5rem 1.5rem 2rem;
+  text-align: center;
+  border-bottom: 3px solid var(--gold-lt);
+}
+
+.eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold-lt);
+  margin-bottom: 0.75rem;
+}
+
+.title {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2rem, 6vw, 3rem);
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+
+.title em {
+  font-style: italic;
+  color: var(--gold-lt);
+}
+
+.tagline {
+  font-size: 13px;
+  color: #a09890;
+  letter-spacing: 0.08em;
+}

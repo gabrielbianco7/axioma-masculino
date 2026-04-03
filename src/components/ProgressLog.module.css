@@ -1,0 +1,43 @@
+.wrap {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 1.25rem 1.4rem;
+  margin-top: 1rem;
+}
+
+.title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.75rem;
+}
+
+.logs { display: flex; flex-direction: column; gap: 0; }
+
+.line {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  padding: 5px 0;
+  border-bottom: 1px solid var(--bg);
+  animation: fadeIn 0.25s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(3px); } to { opacity: 1; } }
+
+.ts { color: var(--text-muted); min-width: 68px; font-variant-numeric: tabular-nums; }
+.agent { color: var(--gold); font-weight: 600; min-width: 170px; }
+.msg { color: var(--text-mid); flex: 1; }
+.ok { color: var(--green); font-weight: 600; }
+
+.error {
+  margin-top: 0.75rem;
+  background: var(--red-bg);
+  border: 1px solid #e0a0a0;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 14px;
+  color: var(--red);
+}
